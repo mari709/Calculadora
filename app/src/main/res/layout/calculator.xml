@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="8dp"
+    android:shrinkColumns="0,1,2,3,4"
+    android:stretchColumns="0,1,2">
+
+    <TextView
+        android:id="@+id/tv_display_operation"
+        android:gravity="center_vertical|end"
+        android:lines="1" />
+
+    <TextView
+        android:id="@+id/tv_display"
+        android:gravity="center_vertical|end"
+        android:lines="1"
+        android:text="@string/_0_0"
+        android:textSize="@dimen/btnSize" />
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/_7"
+            android:theme="@style/BtnBasic" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/_8"
+            android:theme="@style/BtnBasic" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/_9"
+            android:theme="@style/BtnBasic" />
+
+        <Button
+            android:layout_height="match_parent"
+            android:onClick="btnClicked"
+            android:text="@string/SQRT"
+            android:textSize="15sp"
+            android:theme="@style/BtnOperation" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/C"
+            android:theme="@style/BtnOperation" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/_4"
+            android:theme="@style/BtnBasic" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/_5"
+            android:theme="@style/BtnBasic" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/_6"
+            android:theme="@style/BtnBasic" />
+
+        <Button
+            android:id="@+id/button4"
+            android:onClick="btnClicked"
+            android:text="@string/_percent"
+            android:theme="@style/BtnOperation" />
+
+        <Button
+            android:id="@+id/button5"
+            android:onClick="btnClicked"
+            android:text="@string/divide"
+            android:theme="@style/BtnOperation" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/_1"
+            android:theme="@style/BtnBasic" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/_2"
+            android:theme="@style/BtnBasic" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/_3"
+            android:theme="@style/BtnBasic" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/_mutip"
+            android:theme="@style/BtnOperation" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/sub"
+            android:theme="@style/BtnOperation" />
+
+    </TableRow>
+
+    <TableRow>
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/_0"
+            android:theme="@style/BtnBasic" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/dot"
+            android:theme="@style/BtnBasic" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/equal"
+            android:theme="@style/BtnOperation" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text="@string/add"
+            android:theme="@style/BtnOperation" />
+
+        <Button
+            android:onClick="btnClicked"
+            android:text=":)"
+            android:theme="@style/BtnOperation" />
+    </TableRow>
+
+</TableLayout>

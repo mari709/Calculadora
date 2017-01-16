@@ -1,0 +1,25 @@
+<resources xmlns:android="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Style Basic Button -->
+    <style name="BtnBasic" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlHighlight">@color/colorPrimaryDark</item>
+        <item name="android:textSize">@dimen/btnSize</item>
+    </style>
+
+    <!-- Style Operation Button -->
+    <style name="BtnOperation" parent="Theme.AppCompat.Light">
+        <item name="colorButtonNormal">@color/colorPrimaryDark</item>
+        <item name="colorControlHighlight">@color/colorAccent</item>
+        <item name="android:textColor">@color/White</item>
+        <item name="android:textSize">@dimen/btnSize</item>
+
+    </style>
+</resources>
