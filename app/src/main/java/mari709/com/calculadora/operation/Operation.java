@@ -13,11 +13,16 @@ public enum Operation {
         this.KEY = key;
     }
 
-    /*
-    public String getKEY() {
+
+    /*public String getKEY() {
         return KEY;
-    }
-    */
+    }*/
+
+    /*@Override
+    public String toString() {
+        return  this.KEY;
+    }*/
+
 
     public static Operation operationKey(String value) {
         for (Operation op : values()) {
@@ -27,4 +32,5 @@ public enum Operation {
         }
         return NONE;
     }
+
 }

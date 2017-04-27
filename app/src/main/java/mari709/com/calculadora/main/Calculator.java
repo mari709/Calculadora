@@ -22,6 +22,7 @@ public class Calculator extends AppCompatActivity {
     private Operation currentOperation = Operation.NONE;
     private String display = "0.0";
     private String display2 = "";
+    //private boolean finished = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -84,15 +85,6 @@ public class Calculator extends AppCompatActivity {
                     display2 += value;
                 }//END IF "DOT"
                 break;
-            case "+":
-            case "-":
-            case "*":
-            case "/":
-                if (!display.isEmpty()) {
-                    display2 = display + value;
-                    calculateBasicOperation(value);
-                }//END IF "BASIC OPERATION"
-                break;
             case "SQRT":
                 if (!display.isEmpty()) {
                     display2 = "SQRT(" + display + ")";
@@ -109,11 +101,21 @@ public class Calculator extends AppCompatActivity {
                 break;
             case "%":
                 display2 = display + value + " of " + accumulator;
-                //display2 = accumulator + "+"+display + value; //ADD
                 calculatePercent();
                 break;
         }
         updateDisplay();
+    }
+
+    public void btnOperationClicked(View v) {
+
+        Button button = (Button) v;
+        String value = button.getText().toString();
+        if (!display.isEmpty()) {
+            display2 = display + value;
+        }
+        updateDisplay();
+        calculateBasicOperation(value);
     }
 
     private void calculateRoot() {
@@ -122,7 +124,6 @@ public class Calculator extends AppCompatActivity {
     }
 
     private void calculatePercent(){
-        //display = String.valueOf(accumulator + accumulator*Double.parseDouble(display)/100);  //ADD
         display = String.valueOf(accumulator*Double.parseDouble(display)/100);
     }
 
@@ -153,6 +154,7 @@ public class Calculator extends AppCompatActivity {
         currentOperation = Operation.NONE;
         accumulator = Double.parseDouble("0.0");
     }
+
     private void calculateBasicOperation(String value) {
         accumulator = Double.parseDouble(display);
         currentOperation = Operation.operationKey(value);

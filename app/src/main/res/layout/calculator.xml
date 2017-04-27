@@ -73,13 +73,13 @@
 
         <Button
             android:id="@+id/button4"
-            android:onClick="btnClicked"
+            android:onClick="btnOperationClicked"
             android:text="@string/_percent"
             android:theme="@style/BtnOperation" />
 
         <Button
             android:id="@+id/button5"
-            android:onClick="btnClicked"
+            android:onClick="btnOperationClicked"
             android:text="@string/divide"
             android:theme="@style/BtnOperation" />
 
@@ -103,12 +103,12 @@
             android:theme="@style/BtnBasic" />
 
         <Button
-            android:onClick="btnClicked"
+            android:onClick="btnOperationClicked"
             android:text="@string/_mutip"
             android:theme="@style/BtnOperation" />
 
         <Button
-            android:onClick="btnClicked"
+            android:onClick="btnOperationClicked"
             android:text="@string/sub"
             android:theme="@style/BtnOperation" />
 
@@ -132,13 +132,13 @@
             android:theme="@style/BtnOperation" />
 
         <Button
-            android:onClick="btnClicked"
+            android:onClick="btnOperationClicked"
             android:text="@string/add"
             android:theme="@style/BtnOperation" />
 
         <Button
             android:onClick="btnClicked"
-            android:text=":)"
+            android:text=""
             android:theme="@style/BtnOperation" />
     </TableRow>
 
